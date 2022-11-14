@@ -30,22 +30,28 @@ export default {
     .my_card {
         background-color: #2E3A46;
         height: 100%;
-    }
-
-    image {
-        width: 180px;
-        height: 260px;
-
-        img {
-            width: 100%;
-            object-fit: contain;
+        h6{
+            text-transform: uppercase;
         }
-    }
-    .info{
-        color: #7D7977;
-        margin-top: 0.5rem;
-        p{
-            margin-bottom: 0;
+
+
+        image {
+            width: 180px;
+            height: 260px;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .info {
+            color: #7D7977;
+            margin-top: 0.5rem;
+
+            p {
+                margin-bottom: 0;
+            }
         }
     }
 }

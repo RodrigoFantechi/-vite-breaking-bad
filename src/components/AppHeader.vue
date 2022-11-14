@@ -12,7 +12,7 @@ export default {
 
 <template>
     <header>
-      <!-- <img src="../assets/img/" alt=""> -->
+      
      <h1>Breaking Bad Api</h1>
     </header>
 </template>

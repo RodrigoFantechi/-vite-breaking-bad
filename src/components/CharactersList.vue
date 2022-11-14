@@ -21,7 +21,7 @@ export default {
     </div>
     <div class="characters_cards">
         <div class="container">
-            <div class="row row-cols-5 g-3"><SingleCharacter/></div>
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 g-3"><SingleCharacter/></div>
         </div>
     </div>
 </section>
