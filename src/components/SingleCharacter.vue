@@ -29,6 +29,7 @@ export default {
 .col {
     .my_card {
         background-color: #2E3A46;
+        height: 100%;
     }
 
     image {
