@@ -12,13 +12,11 @@ export default {
 
 <template>
     <header>
-      <img src="" alt="">
+      <!-- <img src="../assets/img/" alt=""> -->
      <h1>Breaking Bad Api</h1>
     </header>
 </template>
 
 <style lang="scss" scoped>
-header{
 
-}
 </style>

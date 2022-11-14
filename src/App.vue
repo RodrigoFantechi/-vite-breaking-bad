@@ -19,6 +19,7 @@ export default {
       axios.get(url).then(resp => {
         console.log(resp);
         store.characters = resp.data
+        store.charactersLength = resp.data.length
         
 
       }).catch(err => {
