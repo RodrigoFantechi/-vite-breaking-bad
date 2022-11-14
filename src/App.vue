@@ -3,11 +3,13 @@ import axios from 'axios'
 import {store} from './store.js' 
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
+import Loader from './components/Loader.vue'
 export default {
   name: 'App',
   components:{
     AppHeader,
     AppMain,
+    Loader,
   },
   data(){
     return{
@@ -20,7 +22,7 @@ export default {
         console.log(resp);
         store.characters = resp.data
         store.charactersLength = resp.data.length
-        
+        store.show=1
 
       }).catch(err => {
         console.error(err.message);
@@ -30,13 +32,15 @@ export default {
   },
   mounted() {
     this.callApi(store.API_URL)
+    
   },
 }
 </script>
 
 <template>
 <AppHeader/>
-<AppMain />
+<Loader v-if='store.show===0'/>
+<AppMain v-else/>
 </template>
 
 <style lang="scss" scoped>
