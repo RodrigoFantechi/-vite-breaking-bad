@@ -1,7 +1,7 @@
 import {reactive} from 'vue'
 
 export const store = reactive({
-    show: 0,
+    show: false,
     charactersLength: null,
     characters: null,
     error: null,

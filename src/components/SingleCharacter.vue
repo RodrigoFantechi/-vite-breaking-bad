@@ -31,18 +31,19 @@ export default {
     .my_card {
         background-color: #2E3A46;
         height: 100%;
+
         h6{
             text-transform: uppercase;
         }
 
 
-        image {
-            width: 180px;
-            height: 260px;
+        .image {
+            
 
             img {
                 width: 100%;
-                object-fit: contain;
+                height: 260px;
+                object-fit: cover;
             }
         }
 

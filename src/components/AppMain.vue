@@ -13,9 +13,9 @@ export default {
       <div class="container">
          <select class="form-select my-4" aria-label="Default select example">
             <option selected>Select Category</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Alive</option>
+            <option value="2">Better Call Saul</option>
+            <option value="3">Breaking Bad</option>
          </select>
          <CharactersList />
       </div>

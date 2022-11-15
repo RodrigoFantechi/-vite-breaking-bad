@@ -22,7 +22,7 @@ export default {
         console.log(resp);
         store.characters = resp.data
         store.charactersLength = resp.data.length
-        store.show=1
+        store.show=true
 
       }).catch(err => {
         console.error(err.message);
@@ -39,7 +39,7 @@ export default {
 
 <template>
 <AppHeader/>
-<Loader v-if='store.show===0'/>
+<Loader v-if='store.show=== false'/>
 <AppMain v-else/>
 </template>
 
