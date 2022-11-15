@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="text-center my-5">
       
      <h1>Breaking Bad Api</h1>
     </header>

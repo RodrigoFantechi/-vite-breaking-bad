@@ -10,7 +10,7 @@ export default {
 
 <template>
    <main>
-      <div class="container">
+      <div class="container pb-5">
          <select class="form-select my-4" aria-label="Default select example">
             <option selected>Select Category</option>
             <option value="1">Alive</option>
