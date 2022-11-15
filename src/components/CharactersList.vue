@@ -1,5 +1,5 @@
 <script>
-import {store} from '../store' 
+import { store } from '../store'
 import CharactersNumbers from './CharactersNumbers.vue'
 import SingleCharacter from './SingleCharacter.vue'
 export default {
@@ -17,20 +17,20 @@ export default {
 </script>
 
 <template>
-<section class="characters p-5">
-    <CharactersNumbers />
-    <div class="characters_cards">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 g-3"
-            ><SingleCharacter/>
+    <section class="characters p-5">
+        <CharactersNumbers />
+        <div class="characters_cards">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 g-3">
+                    <SingleCharacter />
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-</section>
+    </section>
 </template>
 
 <style lang="scss" scoped>
-.characters{
+.characters {
     background-color: #FFFFFF;
 
 }

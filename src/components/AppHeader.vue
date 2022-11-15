@@ -12,7 +12,6 @@ export default {
 
 <template>
     <header class="text-center my-5">
-      
      <h1>Breaking Bad Api</h1>
     </header>
 </template>

@@ -8,11 +8,16 @@ export default {
             store,
         }
     },
+    computed: {
+        returnNumber(){
+            return store.characters.length
+        }
+    },
 }
 </script>
 <template >
     <div class="characters_numbers p-3 mb-3">
-        <h3>Found {{store.charactersLength}} characters</h3>
+        <h3>Found {{returnNumber}} characters</h3>
     </div>
 </template>
 <style lang="scss" scoped>
