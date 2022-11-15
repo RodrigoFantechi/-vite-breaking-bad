@@ -17,7 +17,7 @@ export default {
   },
   
   mounted() {
-    store.methods.callApi(store.API_URL)
+    store.callApi(store.API_URL)
     
   },
 }
