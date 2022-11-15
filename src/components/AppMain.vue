@@ -1,6 +1,5 @@
 <script>
 import { store } from '../store.js'
-
 import CharactersList from './CharactersList.vue'
 import Filter from './Filter.vue'
 export default {
@@ -22,7 +21,6 @@ export default {
             url = `${this.store.API_URL}?category=${searchActor}` 
          } 
          
-
          store.methods.callApi(url)
       }
    },
