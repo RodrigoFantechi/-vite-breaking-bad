@@ -16,22 +16,9 @@ export default {
       store,
     }
   },
-  methods: {
-    callApi(url) {
-      axios.get(url).then(resp => {
-        console.log(resp);
-        store.characters = resp.data
-        store.charactersLength = resp.data.length
-        store.show=true
-
-      }).catch(err => {
-        console.error(err.message);
-        store.error = err.message
-      })
-    }
-  },
+  
   mounted() {
-    this.callApi(store.API_URL)
+    store.methods.callApi(store.API_URL)
     
   },
 }

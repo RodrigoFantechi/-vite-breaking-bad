@@ -1,6 +1,6 @@
 <script>
 import { store } from '../store.js'
-import axios from 'axios'
+
 import CharactersList from './CharactersList.vue'
 import Filter from './Filter.vue'
 export default {
@@ -23,15 +23,7 @@ export default {
          } 
          
 
-         axios.get(url).then(response => {
-            console.log(response);
-            this.store.characters = response.data
-            this.store.charactersLength = response.data.length
-
-         }).catch(err => {
-            console.log(err.message);
-
-         })
+         store.methods.callApi(url)
       }
    },
 }
