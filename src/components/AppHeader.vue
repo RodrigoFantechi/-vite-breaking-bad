@@ -11,11 +11,16 @@ export default {
 </script>
 
 <template>
-    <header class="text-center my-5">
-     <h1>Breaking Bad Api</h1>
+    <header class="text-center my-5 d-flex justify-content-center align-items-center">
+        <img src="../assets/img/Breaking_Bad_logo.png" alt="">
+     <h1 >Breaking Bad Api</h1>
     </header>
 </template>
 
 <style lang="scss" scoped>
+img{
+    width: 80px;
+
+}
 
 </style>
