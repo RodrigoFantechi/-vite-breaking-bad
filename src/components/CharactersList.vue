@@ -1,10 +1,12 @@
 <script>
 import {store} from '../store' 
+import CharactersNumbers from './CharactersNumbers.vue'
 import SingleCharacter from './SingleCharacter.vue'
 export default {
     name: 'CharactersList',
     components: {
-        SingleCharacter
+        SingleCharacter,
+        CharactersNumbers,
     },
     data() {
         return {
@@ -16,12 +18,12 @@ export default {
 
 <template>
 <section class="characters p-5">
-    <div class="characters_numbers p-3 mb-3">
-        <h3>Found {{store.charactersLength}} characters</h3>
-    </div>
+    <CharactersNumbers />
     <div class="characters_cards">
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 g-3"><SingleCharacter/></div>
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 g-3"
+            ><SingleCharacter/>
+        </div>
         </div>
     </div>
 </section>
@@ -30,12 +32,6 @@ export default {
 <style lang="scss" scoped>
 .characters{
     background-color: #FFFFFF;
-    .characters_numbers{
-        background-color: #212529;
-        h3{
-            font-weight: bold;   
-        }
-        font-weight: bold;
-    }
+
 }
 </style>
