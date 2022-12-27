@@ -21,7 +21,7 @@ export default {
             url = `${this.store.API_URL}?category=${searchActor}` 
          } 
          
-         store.callApi(url)
+         this.store.callApi(url)
       }
    },
 }

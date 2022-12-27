@@ -8,16 +8,16 @@ export const store = reactive({
   error: null,
   categorySelector: 'All',
   API_URL: 'https://www.breakingbadapi.com/api/characters',
-  callApi: (url) => {
+  callApi (url) {
     axios.get(url).then(resp => {
       console.log(resp);
-      store.characters = resp.data
-      store.charactersLength = resp.data.length
-      store.show = true
+      this.characters = resp.data
+      this.charactersLength = resp.data.length
+      this.show = true
 
     }).catch(err => {
       console.error(err.message);
-      store.error = err.message
+      this.error = err.message
     })
   }
 });
